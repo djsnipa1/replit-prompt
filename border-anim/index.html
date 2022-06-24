@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Border Animation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Bungee&family=Eczar:wght@400;600&family=Exo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<button id="menu__handle" class="menu__handle">
+<span>Menu</span></button>
+<nav id="menu" class="menu">
+  <div class="menu__inner">
+		<ul style="list-style-type: none; padding-inline-start: 0;">
+			<li><a href="#"><span>Home<span></a></li>
+			<li><a href="#"><span>Favs<span></a></li>
+			<li><a href="#"><span>Files<span></a></li>
+			<li><a href="#"><span>Stats<span></a></li>
+		</ul>
+    <div class="morph-shape">
+      <svg class="svgBorder" width="100%" height="100%" viewBox="0 0 600 800" preserveAspectRatio="none">
+      </svg>
+    </div>
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

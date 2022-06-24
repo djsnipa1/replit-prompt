@@ -1,0 +1,27 @@
+<svg width="200" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="nonzero" stroke-linejoin="round" xml:space="preserve">
+ <g class="layer">
+  <title>prompt</title>
+  <g id="svg_0">
+   <style>.one {
+  fill: #a72992;
+}
+.two {
+  fill: #eb587c;
+}
+.three {
+  fill: #ff9c75;
+}
+.four {
+  fill: #76bddb;
+}
+.five {
+  fill: #1c668d;
+}</style>
+   <path class="five" d="m90.6,25l0,10.23l18.75,0l5.09,-5.76l-5.09,-4.47l-18.75,0z" id="svg_5"/>
+   <path class="four" d="m84.73,25l0,10.23l6.64,0l5.1,-5.76l-5.1,-4.47l-6.64,0z" id="svg_4"/>
+   <path class="three" d="m78.87,25l0,10.23l6.64,0l5.09,-5.76l-5.09,-4.47l-6.64,0z" id="svg_3"/>
+   <path class="two" d="m37.81,25l0,10.23l41.84,0l5.1,-5.76l-5.1,-4.47l-41.84,0z" id="svg_2"/>
+   <path class="one" d="m25,25l0,10.23l26.68,0l5.09,-5.76l-5.09,-4.47l-26.68,0z" id="svg_1"/>
+  </g>
+ </g>
+</svg>

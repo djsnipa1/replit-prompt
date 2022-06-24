@@ -1,0 +1,187 @@
+
+
+.path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: dash 15s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1;
+    opacity: 20%;
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 100%;
+  }
+}
+
+button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea {
+  border: 2px dotted #333;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+.chad {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  border: solid 2px black;
+  width: 200px;
+  height: 200px;
+  visibility: hidden;
+}
+.hidden {
+  display: none;
+}
+
+/* #swatch{privacy
+  background: white;
+  box-shadow: .1em .1em .1em rgba(0, 0, 0, .1);
+  display: flex;
+  flex-direction: column;
+} */
+
+input[type="color"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 1.5em;
+  padding: 0;
+  width: 1.5em;
+}
+
+*:focus{
+  border-radius: 0;
+  outline: none;
+}
+
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+::-webkit-color-swatch{
+  border: 0;
+  border-radius: 0;
+}
+
+::-moz-color-swatch,
+::-moz-focus-inner{
+  border: 0;
+}
+
+::-moz-focus-inner{
+  padding: 0;
+}
+
+.text, .input, .inputBox {
+  display: inline-block;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+}
+#preview {
+  margin: 40px auto 0;
+  width: 200px;
+  height: 200px;
+}
+
+.container {  
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "prompt inputs";
+}
+
+.prompt {
+  background: pink;
+}
+
+.prompt > svg {
+  margin: 50px 25px;
+}
+
+.inputs {
+  background: #aaa;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.4em 0em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "text1 input1"
+    "text2 input2"
+    "text3 input3"
+    "text4 input4"
+    "text5 input5";
+  grid-area: inputs;
+  justify-items: start;
+}
+
+.input {
+  background: #09e184;
+}
+.input1 {
+  border: 1px dotted blueviolet;
+}
+.text {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+/*   justify-self: end; */
+  margin: auto 10px; 
+  background: orange;
+}
+
+.text[data-number='1'] { 
+  grid-area: text1;
+  justify-self: end;
+}
+.text[data-number='2'] { 
+  grid-area: text2;
+  justify-self: end;
+}
+.text[data-number='3'] { 
+  grid-area: text3;
+  justify-self: end;
+}
+.text[data-number='4'] { 
+  grid-area: text4;
+  justify-self: end;
+}
+.text[data-number='5'] { 
+  grid-area: text5;
+  justify-self: end;
+}
+
+.input[data-number='1'] { grid-area: input1; }
+
+.input[data-number='2'] { grid-area: input2; }
+
+.input[data-number='3'] { grid-area: input3; }
+
+.input[data-number='4'] { grid-area: input4; }
+
+.input[data-number='5'] { grid-area: input5; }
+
+.prompt { grid-area: prompt; }

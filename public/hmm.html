@@ -1,0 +1,19 @@
+<link rel="stylesheet" type="text/css" href="plugin/codemirror/lib/codemirror.css">
+
+<body>
+	<textarea class="codemirror-textarea"></textarea>
+</body>
+
+<script>
+
+$(document).ready(function(){
+    var codeText = $(".codemirror-textarea")[0];
+    var editor = CodeMirror.fromTextArea(codeText, {
+        lineNumbers : true
+    });
+});
+
+</script>
+
+<script type="text/javascript" src="plugin/codemirror/lib/codemirror.js"></script>
+

@@ -1,0 +1,50 @@
+diff --git a/index.html b/public/index.html
+index df39a0c..cc1cfd8 100644
+--- a/index.html
++++ b/public/index.html
+@@ -13,18 +13,8 @@
+   <body>
+     <div class="container">
+      <form action="/new" method="post">
+-
+-<div id="swatch">
+-  <input type="color" id="color" name="color" value="#FF0000">
+-  <div class="info">
+-    <h1>Input</h1>
+-    <h2>Color</h2>
+-  </div>
+-</div>
+-      <div class="inputs">
+-
+-   
+-        
++       
++      <div class="inputs"> 
+         <div class="text" data-number="1">Color 1</div>
+         <div class="text" data-number="2">Color 2</div>
+         <div class="text" data-number="3">Color 3</div>
+@@ -32,7 +22,11 @@
+         <div class="text" data-number="5">Color 5</div>
+ 
+                   <div class="input" data-number="1">
+-          <input name="color1"  type="text" class="inputBox" id="inputBox1" required minlength="7"
++       <div id="swatch">
++  <input type="color" id="color" name="color" value="#FF0000">
++</div>
++
++                    <input name="color1"  type="text" class="inputBox" id="inputBox1" required minlength="7"
+           maxlength="10" size="10">
+       
+                   </div>
+@@ -67,9 +61,8 @@
+           <path class="four" d="m45.826 0v12h16.188l6.283-6.0007-6.283-5.9993z"
+           style="fill:#76bddb" />
+           <path class="three" d="m39.738 0v12h16.188l6.283-6.0007-6.283-5.9993z"
+-          style="fill:#ff9c75" />
+-          <path class="two" d="m21.991 0v12h28.211l6.283-6.0007-6.283-5.9993z" style="fill:#eb587c"
+-          />
++          style="fill:#ff9c75"/>
++          <path class="two" d="m21.991 0v12h28.211l6.283-6.0007-6.283-5.9993z" style="fill:#eb587c"/>
+ <!--           <path class="one" d="m0 0v12h28.211l6.283-6.0007-6.283-5.9993z"/> -->
+           <path class="one" d="m0 0v12h28.211l6.283-6.0007-6.283-5.9993z" style="fill:#a72992"/>
+         </svg>

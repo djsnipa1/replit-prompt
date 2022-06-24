@@ -1,0 +1,27 @@
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+img {
+  height: 50;
+}
+.layer {
+  height: 48;
+  width: 150;
+  border: 1px solid #000;
+}
+.inputBox {
+  margin: .4rem 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.divContain2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
