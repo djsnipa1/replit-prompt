@@ -30,5 +30,6 @@
     pkgs.mdcat
     pkgs.tmux
     pkgs.gh
+    pkgs.lazygit
     ];
 }

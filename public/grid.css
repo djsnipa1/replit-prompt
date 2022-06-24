@@ -60,16 +60,30 @@ textarea {
   flex-direction: column;
 } */
 
+.input {
+  align-self: center;
+}
+
 input[type="color"] {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: none;
-  border: 0;
+  background: orange;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin: auto 10px; 
   cursor: pointer;
   height: 1.5em;
   padding: 0;
   width: 1.5em;
+}
+
+.text {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+/*   justify-self: end; */
+  margin: auto 10px; 
+  background: orange;
 }
 
 *:focus{
@@ -130,11 +144,11 @@ input[type="color"] {
   gap: 0.4em 0em;
   grid-auto-flow: row;
   grid-template-areas:
-    "text1 input1"
-    "text2 input2"
-    "text3 input3"
-    "text4 input4"
-    "text5 input5";
+    "text1 swatch1 input1"
+    "text2 swatch2 input2"
+    "text3 swatch3 input3"
+    "text4 swatch4 input4"
+    "text5 swatch5 input5";
   grid-area: inputs;
   justify-items: start;
 }
@@ -184,4 +198,16 @@ input[type="color"] {
 
 .input[data-number='5'] { grid-area: input5; }
 
+.swatch1 { grid-area: swatch1; }
+
+.swatch2 { grid-area: swatch2; }
+
+.swatch3 { grid-area: swatch3; }
+
+.swatch4 { grid-area: swatch4; }
+
+.swatch5 { grid-area: swatch5; }
+
 .prompt { grid-area: prompt; }
+
+
