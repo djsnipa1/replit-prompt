@@ -8,6 +8,9 @@
     <title>prompt</title>
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
     <link rel="stylesheet" href="grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700;800&family=Spline+Sans+Mono&display=swap" rel="stylesheet">
   </head>
   
   <body>
@@ -15,45 +18,26 @@
      <form action="/new" method="post">
        
       <div class="inputs"> 
-        <div class="text" data-number="1">Color 1</div>
-        <div class="text" data-number="2">Color 2</div>
-        <div class="text" data-number="3">Color 3</div>
-        <div class="text" data-number="4">Color 4</div>
-        <div class="text" data-number="5">Color 5</div>
+  <input type="color" id="inputColor1" class="inputColor" name="color1" data-number="1" value="#a72992">
+  <input type="color" id="inputColor2" class="inputColor" name="color2" data-number="2" value="#eb587c">
+  <input type="color" id="inputColor3" class="inputColor" name="color3" data-number="3" value="#ff9c75">
+  <input type="color" id="inputColor4" class="inputColor" name="color4" data-number="4" value="#76bddb">
+  <input type="color" id="inputColor5" class="inputColor" name="color5" data-number="5" value="#1c668d">
 
-  <div class="swatch1">
-       <div id="swatch">
-  <input type="color" id="inputColor1" class="inputColor" name="color" value="#FF0000">
-</div>
-  </div>
-  <div class="swatch2"></div>
-  <div class="swatch3"></div>
-  <div class="swatch4"></div>
-  <div class="swatch5"></div>
-        
-
-                  <div class="input" data-number="1">
-    
-
-                    <input name="color1"  type="text" class="inputBox" id="inputBox1" required minlength="7"
-          maxlength="10" size="10">
-      
-                  </div>
+      <div class="input" data-number="1">
+          <input name="color1"  type="text" class="inputBox" id="inputBox1" required minlength="7" maxlength="7" size="7" value="#a72992">
+        </div>
         <div class="input" data-number="2">
-          <input name="color2"  type="text" class="inputBox" id="inputBox2" required minlength="7"
-          maxlength="10" size="10">
+          <input name="color2"  type="text" class="inputBox" id="inputBox2" required minlength="7" maxlength="7" size="7" value="#eb587c">
         </div>
         <div class="input" data-number="3">
-          <input name="color3"  type="text" class="inputBox" id="inputBox3" required minlength="7"
-          maxlength="10" size="10">
+          <input name="color3"  type="text" class="inputBox" id="inputBox3" required minlength="7" maxlength="7" size="7" value="#ff9c75">
         </div>
         <div class="input" data-number="4">
-          <input name="color4"  type="text" class="inputBox" id="inputBox4" required minlength="7"
-          maxlength="10" size="10">
+          <input name="color4"  type="text" class="inputBox" id="inputBox4" required minlength="7" maxlength="7" size="7" value="#76bddb">
         </div>
         <div class="input" data-number="5">
-          <input name="color5" type="text" class="inputBox" id="inputBox5" required minlength="7"
-          maxlength="10" size="10">
+          <input name="color5" type="text" class="inputBox" id="inputBox5" required minlength="7" maxlength="7" size="7" value="#1c668d">
         </div>
    
   <button type="submit">Submit Form</button> 
@@ -65,14 +49,10 @@
         line-no-trailing-whitespace -->
         <svg clip-rule="evenodd" stroke-linejoin="round" version="1.1" viewBox="0 0 100 12"
         xmlns="http://www.w3.org/2000/svg">
-          <path class="five" d="m60.457 0v12h33.26l6.283-6.0007-6.283-5.9993z"
-          style="fill:#1c668d" />
-          <path class="four" d="m45.826 0v12h16.188l6.283-6.0007-6.283-5.9993z"
-          style="fill:#76bddb" />
-          <path class="three" d="m39.738 0v12h16.188l6.283-6.0007-6.283-5.9993z"
-          style="fill:#ff9c75"/>
+          <path class="five" d="m60.457 0v12h33.26l6.283-6.0007-6.283-5.9993z"/>
+          <path class="four" d="m45.826 0v12h16.188l6.283-6.0007-6.283-5.9993z"/>
+          <path class="three" d="m39.738 0v12h16.188l6.283-6.0007-6.283-5.9993z"/>
           <path class="two" d="m21.991 0v12h28.211l6.283-6.0007-6.283-5.9993z"/>
-<!--           <path class="two" d="m21.991 0v12h28.211l6.283-6.0007-6.283-5.9993z" style="fill:#eb587c"/> -->
           <path class="one" d="m0 0v12h28.211l6.283-6.0007-6.283-5.9993z"/>
 <!--           <path class="one" d="m0 0v12h28.211l6.283-6.0007-6.283-5.9993z" style="fill:#a72992"/> -->
         </svg>
@@ -97,29 +77,24 @@
     <dino-color-picker value="#a72992" data-number="1"
     class="hidden"></dino-color-picker>
     <div id="preview"></div>
-    <script src="fontColorContrast.js">
-      const bgColor = '#fc7a34' 
-const fontColor = fontColorContrast(bgColor)
-console.log(fontColor)
-  
-
-
-    </script>
+   
    <script type="module">
-// Use 'https://cdn.skypack.dev/' + 'npm package name' + '@version its optional'
+  // TESTING SKYPACK
+     // Use 'https://cdn.skypack.dev/' + 'npm package name' + '@version its optional'
 import random from 'https://cdn.skypack.dev/canvas-sketch-util@1.10.0/random'
+const result = 'A random number: ' + Math.floor(random.range(1,1000));
+// console.log('A random number: ', random.range(1,10))
+console.log(result)
+    const tester = document.querySelector("#preview");
+     tester.innerHTML = result;
+// END TESTING SKYPACK
 
-console.log('A random number: ', random.range(1,10))
-     
-</script>
-
-            <script type="module">
+// dino-color-picker
       import "https://unpkg.com/dino-color-picker";
-import fontColorContrast from 'https://cdn.skypack.dev/font-color-contrast';
 
-
-              
-              // define cp variable
+// fontColorContrast
+import fontColorContrast from 'https://cdn.skypack.dev/font-color-contrast';              
+  // define dino-color-picker cp variable
       // const cp = document.querySelector("dino-color-picker");
       const cp1 = document.querySelector('dino-color-picker[data-number="1"]');
       const cp2 = document.querySelector('dino-color-picker[data-number="2"]');
@@ -131,10 +106,6 @@ import fontColorContrast from 'https://cdn.skypack.dev/font-color-contrast';
       const preview = document.querySelector("#preview");
       preview.style.background = cp1.value;    
 
-      
-
-
-             
   // input boxes variables
   const input1 = document.querySelector("#inputBox1");
   const input2 = document.querySelector("#inputBox2");
@@ -142,37 +113,76 @@ import fontColorContrast from 'https://cdn.skypack.dev/font-color-contrast';
   const input4 = document.querySelector("#inputBox4");
   const input5 = document.querySelector("#inputBox5");
   // text boxes variables
-  const text1 = document.querySelector("div[data-number='1']");
-  const text2 = document.querySelector("div[data-number='2']");
-  const text3 = document.querySelector("div[data-number='3']");
-  const text4 = document.querySelector("div[data-number='4']");
-  const text5 = document.querySelector("div[data-number='5']");
+  // const text1 = document.querySelector("input[data-number='1']");
+  // const text2 = document.querySelector("div[data-number='2']");
+  // const text3 = document.querySelector("div[data-number='3']");
+  // const text4 = document.querySelector("div[data-number='4']");
+  // const text5 = document.querySelector("div[data-number='5']");
 
   // inputColor variables
   const inputColor1 = document.querySelector('#inputColor1');
+  const inputColor2 = document.querySelector('#inputColor2');
+  const inputColor3 = document.querySelector('#inputColor3');
+  const inputColor4 = document.querySelector('#inputColor4');
+  const inputColor5 = document.querySelector('#inputColor5');
               
 
   // changes backgrounds
- text1.style.background = cp1.value;
-  text2.style.background = cp2.value;
-  text3.style.background = cp3.value;
-  text4.style.background = cp4.value;
-  text5.style.background = cp5.value;
+ // text1.style.background = cp1.value;
+ //  text2.style.background = cp2.value;
+ //  text3.style.background = cp3.value;
+ //  text4.style.background = cp4.value;
+ //  text5.style.background = cp5.value;
       
   const svgOne = document.querySelector("svg > .one");
+  const svgTwo = document.querySelector("svg > .two");
+  const svgThree = document.querySelector("svg > .three");
+  const svgFour = document.querySelector("svg > .four");
+  const svgFive = document.querySelector("svg > .five");
+
   const svgChad = document.querySelector("svg > .path");
   // changes all the values when color is select
 
+// document.addEventListener('DOMContentLoaded', function (event) {
+window.onload = function() {
+  console.log('ballz')
+  input1.style.background = input1.value;
+  input1.style.color = fontColorContrast(inputColor1.value);
+  svgOne.setAttribute('fill', inputColor1.value);
+  input2.style.background = input2.value;
+  input2.style.color = fontColorContrast(inputColor2.value);
+  svgTwo.setAttribute('fill', inputColor2.value);
+  input3.style.background = input3.value;
+  input3.style.color = fontColorContrast(inputColor3.value);
+  svgThree.setAttribute('fill', inputColor3.value);
+  input4.style.background = input4.value;
+  input4.style.color = fontColorContrast(inputColor4.value);
+  svgFour.setAttribute('fill', inputColor4.value);
+  input5.style.background = input5.value;
+  input5.style.color = fontColorContrast(inputColor5.value);
+  svgFive.setAttribute('fill', inputColor5.value);
+}
+              
   inputColor1.addEventListener("input", (event) => {
     preview.style.background = inputColor1.value;
     input1.value = inputColor1.value;
     preview.style.background = inputColor1.value;
-    text1.style.background = inputColor1.value;
     svgOne.setAttribute('fill', inputColor1.value);
-    text1.style.background = inputColor1.value;  
-    text1.style.color = fontColorContrast(inputColor1.value);
+    input1.style.background = inputColor1.value;  
+    input1.style.color = fontColorContrast(inputColor1.value);
   })
 
+  inputColor2.addEventListener("input", (event) => {
+    preview.style.background = inputColor2.value;
+    input2.value = inputColor2.value;
+    preview.style.background = inputColor2.value;
+    text2.style.background = inputColor2.value;
+    svgTwo.setAttribute('fill', inputColor2.value);
+    input2.style.background = inputColor2.value;
+    text2.style.background = inputColor2.value;  
+    input2.style.color = fontColorContrast(inputColor2.value);
+  })
+     
   cp1.addEventListener("change", (event) => {
     preview.style.background = cp1.value;
     input1.value = cp1.value;
@@ -251,20 +261,20 @@ import fontColorContrast from 'https://cdn.skypack.dev/font-color-contrast';
 // });
 
 
-    text1.addEventListener("pointerdown", (e) => {
-      toggle(cp1)
-      placeDiv(cp1, e.x, e.y)
-    });
-    text2.addEventListener("pointerdown", (e) => {
-      show(cp2)
-      placeDiv(cp2, e.x, e.y)
-    });
-    text3.addEventListener("pointerup", (e) => {
-      text3.style.background = "red";
-      console.log(e)  
-      show(cp3)
-      placeDiv(cp3, e.x, e.y)
-    });
+    // text1.addEventListener("pointerdown", (e) => {
+    //   toggle(cp1)
+    //   placeDiv(cp1, e.x, e.y)
+    // });
+    // text2.addEventListener("pointerdown", (e) => {
+    //   show(cp2)
+    //   placeDiv(cp2, e.x, e.y)
+    // });
+    // text3.addEventListener("pointerup", (e) => {
+    //   text3.style.background = "red";
+    //   console.log(e)  
+    //   show(cp3)
+    //   placeDiv(cp3, e.x, e.y)
+    // });
               
       // function removeFromArray(x){
       //   colorPickers.splice()
